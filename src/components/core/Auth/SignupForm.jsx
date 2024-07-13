@@ -203,5 +203,3 @@ function SignupForm() {
     </div>
   )
 }
-
-export default SignupForm
