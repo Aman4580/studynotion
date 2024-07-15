@@ -13,11 +13,6 @@ const mailSender = async (email, title, body) => {
             }
         });
 
-        console.log("email is this ", email);
-        console.log("the value of host is this  ", process.env.MAIL_HOST);
-        console.log("the value of host is this  ", process.env.MAIL_USER);
-        console.log("the value of host is this  ", process.env.MAIL_PASS);
-
         console.log("Before sending mail");
 
         let info = await transporter.sendMail({

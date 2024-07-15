@@ -20,11 +20,8 @@ exports.signup = async (req, res) => {
 			password,
 			confirmPassword,
 			accountType,
-			contactNumber,
 			otp,
 		} = req.body;
-		console.log("otp is this ",otp);
-		console.log("hello");
 		// Check if All Details are there or not
 		if (
 			!firstName ||
@@ -32,7 +29,9 @@ exports.signup = async (req, res) => {
 			!email ||
 			!password ||
 			!confirmPassword ||
+			!accountType ||
 			!otp
+	
 		) {
 			return res.status(403).send({
 				success: false,
@@ -64,7 +63,7 @@ if (response.length === 0) {
     // OTP not found for the email
     return res.status(400).json({
         success: false,
-        message: "The OTP is not valid dfudhvcxc",
+        message: "The OTP is not valid",
     });
 } else if (otp !== response[0].otp) {
     // Invalid OTP
@@ -93,7 +92,6 @@ if (response.length === 0) {
 			firstName,
 			lastName,
 			email,
-			contactNumber,
 			password: hashedPassword,
 			accountType: accountType,
 			approved: approved,
