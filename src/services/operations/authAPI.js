@@ -37,10 +37,6 @@ export function sendotp(email, navigate) {
   };
 }
 
-// export const signUp = async (name, username, password) => {
-//   console.log("signup api run successfully  "  ,endpoints.SIGNUP_API);
-//     return apiConnector('POST', endpoints.SIGNUP_API, { name, username, password });
-// };
 
 export function signup(accountType,confirmPassword,email,firstName,lastName,password) {
   console.log("signup api run successfully  "  ,endpoints.SIGNUP_API);
