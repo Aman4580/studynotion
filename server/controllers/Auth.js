@@ -113,7 +113,7 @@ if (response.length === 0) {
 	}
 };
 
-// Login controller for authenticating users
+// Login controller for authenticating multiple 
 exports.login = async (req, res) => {
 	try {
 		// Get email and password from request body
