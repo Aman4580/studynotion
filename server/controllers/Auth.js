@@ -22,7 +22,7 @@ exports.signup = async (req, res) => {
 			accountType,
 			otp,
 		} = req.body;
-		// Check if All Details are there or not
+		// Check if All Details are there
 		if (
 			!firstName ||
 			!lastName ||
