@@ -149,7 +149,7 @@ exports.getAllCourses = async (req, res) => {
 	}
 };
 
-//getCourseDetails
+// controllers for getCourseDetails
 exports.getCourseDetails = async (req, res) => {
     try {
             //get id
