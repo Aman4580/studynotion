@@ -2,7 +2,7 @@ const Course = require("../models/Course");
 const Category = require("../models/Category");
 const User = require("../models/User");
 const { uploadImageToCloudinary } = require("../utils/imageUploader");
-// Function to create a new course
+//controllers for create course
 exports.createCourse = async (req, res) => {
 	try {
 		// Get user ID from request object
@@ -119,7 +119,7 @@ exports.createCourse = async (req, res) => {
 		});
 	}
 };
-
+//controllers for get all course
 exports.getAllCourses = async (req, res) => {
 	try {
 		const allCourses = await Course.find(
