@@ -35,7 +35,6 @@ exports.updateProfile = async (req, res) => {
 // controllers for deleate account
 exports.deleteAccount = async (req, res) => {
 	try {
-		// TODO: Find More on Job Schedule
 		// const job = schedule.scheduleJob("10 * * * * *", function () {
 		// 	console.log("The answer to life, the universe, and everything!");
 		// });
