@@ -1,5 +1,5 @@
 const Category = require("../models/Category");
-
+//controllers for create catrgory
 exports.createCategory = async (req, res) => {
 	try {
 		const { name, description } = req.body;
@@ -24,7 +24,7 @@ exports.createCategory = async (req, res) => {
 		});
 	}
 };
-
+//controllers for show all category
 exports.showAllCategories = async (req, res) => {
 	try {
 		const allCategorys = await Category.find(
