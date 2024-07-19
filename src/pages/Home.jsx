@@ -15,7 +15,7 @@ import ExploreMore from '../components/core/HomePage/ExploreMore'
 const Home = () => {
   return (
     <div>
-      {/*Section1  */}
+      {/*Section1  */}  
       <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center 
       text-white justify-between'>
 
